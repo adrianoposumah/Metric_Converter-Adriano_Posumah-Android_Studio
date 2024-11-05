@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--  Header  -->
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="447dp"
+        android:layout_height="163dp"
+        android:background="@drawable/background"
+        android:contentDescription="@string/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/app_name"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/name"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="91dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/metricclogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--  Option Metrik  -->
+
+    <!--  Option Dari  -->
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="134dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center_vertical"
+        android:text="@string/pilih_metrik"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerMetric"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="134dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="84dp"
+        android:gravity="center_vertical"
+        android:text="@string/dari"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerDari"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="134dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="140dp"
+        android:gravity="center_vertical"
+        android:text="@string/ke"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerKe"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Spinner
+        android:id="@+id/spinnerMetric"
+        android:layout_width="137dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:entries="@array/metric_options"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Spinner
+        android:id="@+id/spinnerDari"
+        android:layout_width="137dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="32dp"
+        android:entries="@array/unit_options"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerMetric" />
+
+    <Spinner
+        android:id="@+id/spinnerKe"
+        android:layout_width="137dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="32dp"
+        android:entries="@array/unit_options"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerDari" />
+
+    <EditText
+        android:id="@+id/inputValue"
+        android:layout_width="400dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="196dp"
+        android:autofillHints=""
+        android:hint="@string/masukkan_nilai"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:layout_width="396dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="6dp"
+        android:gravity="center_vertical"
+        android:text="@string/hasil"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputValue" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="294dp"
+        android:layout_gravity="center"
+        android:columnCount="3"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Number buttons -->
+        <Button
+            android:id="@+id/btn1"
+            style="@style/KeyboardButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:textColor="#ffffff"
+            android:text="@string/_1" />
+
+        <Button
+            android:id="@+id/btn2"
+            style="@style/KeyboardButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:textColor="#ffffff"
+            android:text="@string/_2" />
+
+        <Button
+            android:id="@+id/btn3"
+            style="@style/KeyboardButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:textColor="#ffffff"
+            android:text="@string/_3" />
+
+        <Button
+            android:id="@+id/btn4"
+            style="@style/KeyboardButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:textColor="#ffffff"
+            android:text="@string/_4" />
+
+        <Button
+            android:id="@+id/btn5"
+            style="@style/KeyboardButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:textColor="#ffffff"
+            android:text="@string/_5" />
+
+        <Button
+            android:id="@+id/btn6"
+            style="@style/KeyboardButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:textColor="#ffffff"
+            android:text="@string/_6" />
+
+        <Button
+            android:id="@+id/btn7"
+            style="@style/KeyboardButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:textColor="#ffffff"
+            android:text="@string/_7" />
+
+        <Button
+            android:id="@+id/btn8"
+            style="@style/KeyboardButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:textColor="#ffffff"
+            android:text="@string/_8" />
+
+        <Button
+            android:id="@+id/btn9"
+            style="@style/KeyboardButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:textColor="#ffffff"
+            android:text="@string/_9" />
+
+        <!-- Clear and Delete buttons with weight applied -->
+        <Button
+            android:id="@+id/btnC"
+            style="@style/KeyboardButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:textColor="#ffffff"
+            android:text="@string/c" />
+
+        <Button
+            android:id="@+id/btn0"
+            style="@style/KeyboardButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:textColor="#ffffff"
+            android:text="@string/_0" />
+
+        <Button
+            android:id="@+id/btnDel"
+            style="@style/KeyboardButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:textColor="#ffffff"
+            android:text="@string/del" />
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
