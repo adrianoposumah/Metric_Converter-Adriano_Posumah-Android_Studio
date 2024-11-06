@@ -1,4 +1,5 @@
 <resources>
+    <!-- String eksisting -->
     <string name="app_name">Metric Converter</string>
     <string name="name">by: Adriano Posumah</string>
     <string name="logo">Logo</string>
@@ -20,15 +21,31 @@
     <string name="c">C</string>
     <string name="_0">0</string>
     <string name="del">Del</string>
+
+    <!-- Pilihan Metrik -->
     <string-array name="metric_options">
         <item>Panjang</item>
         <item>Massa</item>
     </string-array>
 
-    <string-array name="unit_options">
+    <!-- Unit Panjang -->
+    <string-array name="length_unit_options">
         <item>KM</item>
         <item>M</item>
         <item>CM</item>
+        <item>MM</item>
+        <item>Inch</item>
+        <item>Foot</item>
+        <item>Yard</item>
+        <item>Mile</item>
     </string-array>
 
+    <!-- Unit Massa -->
+    <string-array name="mass_unit_options">
+        <item>KG</item>
+        <item>G</item>
+        <item>MG</item>
+        <item>Pound</item>
+        <item>Ounce</item>
+    </string-array>
 </resources>
